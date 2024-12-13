@@ -1,10 +1,19 @@
-/* Grid-layout för detaljerad information */
+/* Layout för Destination-sidan */
 .destination-info {
     display: grid;
-    grid-template-rows: auto auto auto auto;
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    /* En kolumn för enkel läsbarhet */
+    gap: 2rem;
     padding: 2rem;
+}
+
+.destination-info section {
     text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .destination-info img {
@@ -20,11 +29,4 @@
 .destination-info p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-}
-
-/* Transportinfo */
-.destination-info h2 {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    color: #f39c12;
 }
