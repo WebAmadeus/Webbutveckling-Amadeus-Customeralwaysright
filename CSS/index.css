@@ -1,0 +1,40 @@
+/* Grid-layout för startsidan */
+.grid-container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Hero-sektion */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffe5cc;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.features .feature {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}

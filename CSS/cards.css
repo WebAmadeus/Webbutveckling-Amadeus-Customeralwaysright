@@ -1,0 +1,40 @@
+/* Cards-layout */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Enskilt kort */
+.card {
+    flex: 1 1 calc(30% - 2rem);
+    /* Responsiv bredd: ca 30% */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
