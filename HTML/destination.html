@@ -1,48 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinationer - TravelVista</title>
+    <title>TravelVista - Utforska Destinationer</title>
     <link rel="stylesheet" href="/CSS/gemensamcss.css">
     <link rel="stylesheet" href="/CSS/destination.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">TravelVista</div>
+        <div class="logo">
+            <img src="/img/logo.png" alt="TravelVista Logotyp" style="height: 50px; vertical-align: middle;">
+            TravelVista
+        </div>
         <nav class="nav">
-            <a href="index.html">Hem</a>
-            <a href="cards.html">Resor</a>
-            <a href="destination.html">Destinationer</a>
+            <a href="index.html">Startsida</a>
+            <a href="cards.html">Resmål</a>
+            <a href="index.html#about">Om oss</a>
         </nav>
     </header>
 
-    <main class="destination-info">
-        <section id="tokyo">
-            <img src="img/tokyo.jpg" alt="Tokyo">
-            <h1>Tokyo, Japan</h1>
-            <p>Tokyo är en fascinerande blandning av tradition och modernitet. Utforska tempel, futuristiska skyskrapor
-                och utsökt sushi.</p>
+    <main class="destination-grid">
+        <!-- Paris -->
+        <section class="destination-card">
+            <img src="/img/paris.jpg" alt="Paris">
+            <div class="info">
+                <h1>Paris, Frankrike</h1>
+                <p>Kärlekens stad med konst, romantik och historia.</p>
+                <h2>Vad kan du göra i Paris?</h2>
+                <ul>
+                    <li>Besök Eiffeltornet.</li>
+                    <li>Promenera längs Seine.</li>
+                    <li>Upptäck Louvren.</li>
+                    <li>Utforska Montmartre.</li>
+                    <li>Shoppa på Champs-Élysées.</li>
+                    <li>Njut av franska delikatesser som croissanter och macarons.</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="paris">
-            <img src="img/paris.jpg" alt="Paris">
-            <h1>Paris, Frankrike</h1>
-            <p>Paris är känd för sin romantiska atmosfär, Eiffeltornet och världsberömda konstgallerier som Louvren.</p>
+        <!-- Tokyo -->
+        <section class="destination-card">
+            <img src="/img/tokyo.jpg" alt="Tokyo">
+            <div class="info">
+                <h1>Tokyo, Japan</h1>
+                <p>Tradition möter modernitet i världens mest dynamiska stad.</p>
+                <h2>Vad kan du göra i Tokyo?</h2>
+                <ul>
+                    <li>Besök Senso-ji-templet.</li>
+                    <li>Utforska Akihabara.</li>
+                    <li>Shoppa i Harajuku.</li>
+                    <li>Prova sushi och ramen.</li>
+                    <li>Delta i en traditionell teceremoni.</li>
+                    <li>Upplev Tokyo Skytree och blommande sakura.</li>
+                </ul>
+            </div>
         </section>
 
-        <section id="newyork">
-            <img src="img/newyork.jpg" alt="New York">
-            <h1>New York, USA</h1>
-            <p>New York erbjuder allt från teater på Broadway till shopping på Fifth Avenue och ikoniska landmärken som
-                Frihetsgudinnan.</p>
+        <!-- New York -->
+        <section class="destination-card">
+            <img src="/img/newyork.jpg" alt="New York">
+            <div class="info">
+                <h1>New York, USA</h1>
+                <p>Staden som aldrig sover är fylld med ikoniska sevärdheter.</p>
+                <h2>Vad kan du göra i New York?</h2>
+                <ul>
+                    <li>Besök Frihetsgudinnan.</li>
+                    <li>Promenera i Central Park.</li>
+                    <li>Utforska Broadway.</li>
+                    <li>Shoppa på Fifth Avenue.</li>
+                    <li>Njut av museer som MoMA och Metropolitan Museum of Art.</li>
+                    <li>Upplev Times Square och en helikoptertur över Manhattan.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sydney -->
+        <section class="destination-card">
+            <img src="/img/sydney.jpg" alt="Sydney">
+            <div class="info">
+                <h1>Sydney, Australien</h1>
+                <p>Stränder, ikoniska byggnader och en avslappnad atmosfär.</p>
+                <h2>Vad kan du göra i Sydney?</h2>
+                <ul>
+                    <li>Se Operahuset.</li>
+                    <li>Besök Bondi Beach.</li>
+                    <li>Utforska Blue Mountains.</li>
+                    <li>Ta en båttur i hamnen.</li>
+                    <li>Delta i surfinglektioner.</li>
+                    <li>Upptäck stadens nattliv och prova australiska delikatesser.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Rom -->
+        <section class="destination-card">
+            <img src="/img/rome.jpg" alt="Rom">
+            <div class="info">
+                <h1>Rom, Italien</h1>
+                <p>Antikens stad fylld med historia, kultur och fantastiska smaker.</p>
+                <h2>Vad kan du göra i Rom?</h2>
+                <ul>
+                    <li>Utforska Colosseum.</li>
+                    <li>Besök Vatikanstaten och Peterskyrkan.</li>
+                    <li>Promenera på Forum Romanum.</li>
+                    <li>Njut av italiensk mat, espresso och gelato.</li>
+                    <li>Upptäck pittoreska gränder.</li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 TravelVista. Alla rättigheter förbehållna.</p>
+        <p>© 2024 TravelVista. Alla rättigheter förbehållna.</p>
     </footer>
 </body>
 
