@@ -2,7 +2,7 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 2rem;
     justify-content: center;
     padding: 2rem;
 }
@@ -18,10 +18,17 @@
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card img {
-    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    /* Fast höjd för alla bilder */
+    object-fit: cover;
+    /* För att behålla bildens proportioner */
     border-radius: 10px;
 }
 
@@ -33,8 +40,39 @@
 .card p {
     font-size: 1rem;
     margin-bottom: 1rem;
+    flex-grow: 1;
+    /* För att fylla ut utrymmet och hålla knappen nere */
 }
 
-.card:hover {
+/* Justera "Läs mer"-knappen */
+.button {
+    display: inline-block;
+    background-color: #f39c12;
+    color: white;
+    padding: 0.3rem 0.7rem;
+    text-decoration: none;
+    border-radius: 15px;
+    /* Rundade hörn */
+    font-size: 0.9rem;
+    /* Mindre textstorlek */
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #d87f0a;
     transform: scale(1.05);
+    /* Lätt zoom-effekt */
+}
+
+/* Responsiva justeringar */
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(45% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+    }
 }

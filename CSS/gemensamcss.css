@@ -25,12 +25,23 @@ body {
     color: white;
 }
 
-.header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+/* Logotypen */
+.header .logo img {
+    height: 75px;
+    /* Standardstorlek */
+}
+
+/* Anpassa logotypens storlek för mindre skärmar */
+@media (max-width: 840px) {
+    .header .logo img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 780px) {
+    .header .logo img {
+        height: 20px;
+    }
 }
 
 .header .nav a {
@@ -48,4 +59,43 @@ body {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #f39c12;
+    color: white;
+    padding: 0.3rem 0.7rem;
+    text-decoration: none;
+    border-radius: 15px;
+    /* Rundade hörn */
+    font-size: 0.9rem;
+    /* Mindre textstorlek */
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #d87f0a;
+    transform: scale(1.05);
+    /* Lätt zoom-effekt */
+}
+
+/* Responsiva justeringar för navigation */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .nav {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .nav a {
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+    }
 }
