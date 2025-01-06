@@ -6,22 +6,53 @@
     padding: 2rem;
 }
 
-/* Hero-sektion */
 .hero {
+    position: relative;
+    height: 70vh;
+    /* Hero-sektionen fyller 70% av skärmens höjd */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
-    padding: 2rem;
-    background-color: #ffe5cc;
-    border-radius: 10px;
+    background-image: url('/img/hero.jpg');
+    background-size: cover;
+    /* Bilden fyller hela området */
+    background-position: center;
+    /* Centrerad bild */
+    background-repeat: no-repeat;
+    /* Undvik upprepning */
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Skugga för bättre kontrast */
 }
 
 .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Skugga för bättre kontrast */
+}
+
+.hero button {
+    padding: 0.8rem 1.5rem;
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    color: white;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero button:hover {
+    background-color: #d87f0a;
+    transform: scale(1.05);
+    /* Lätt zoom-effekt */
 }
 
 /* Features */
@@ -29,12 +60,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    text-align: center;
+    padding: 2rem;
 }
 
-.features .feature {
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #fff;
+.features h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.features p {
+    font-size: 1rem;
 }

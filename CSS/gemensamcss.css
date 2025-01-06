@@ -18,84 +18,91 @@ body {
 /* Header och Footer */
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    /* Navigationen till höger om logotypen */
     background-color: #f39c12;
     padding: 1rem 2rem;
     color: white;
 }
 
-/* Logotypen */
-.header .logo img {
-    height: 75px;
-    /* Standardstorlek */
-}
-
-/* Anpassa logotypens storlek för mindre skärmar */
-@media (max-width: 840px) {
-    .header .logo img {
-        height: 40px;
-    }
-}
-
-@media (max-width: 780px) {
-    .header .logo img {
-        height: 20px;
-    }
-}
-
-.header .nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-}
-
-.header .nav a:hover {
-    text-decoration: underline;
-}
-
-.footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* Buttons */
-.button {
-    display: inline-block;
+footer {
+    display: flex;
     background-color: #f39c12;
     color: white;
-    padding: 0.3rem 0.7rem;
+}
+
+/* Logotypen */
+.logo img {
+    height: 75px;
+    /* Standardstorlek */
+    transition: height 0.2s;
+    /* Smidig övergång vid responsiv ändring */
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    gap: 1.5rem;
+    /* Standard mellanrum mellan länkar */
+}
+
+.nav a {
+    color: white;
     text-decoration: none;
-    border-radius: 15px;
-    /* Rundade hörn */
-    font-size: 0.9rem;
-    /* Mindre textstorlek */
-    transition: background-color 0.2s, transform 0.2s;
+    font-size: 1rem;
+    /* Standardstorlek för länkar */
+    transition: font-size 0.2s, color 0.2s;
 }
 
-.button:hover {
-    background-color: #d87f0a;
-    transform: scale(1.05);
-    /* Lätt zoom-effekt */
+.nav a:hover {
+    color: #ddd;
 }
 
-/* Responsiva justeringar för navigation */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
+/* Anpassa headern för mindre skärmar */
+@media (max-width: 1024px) {
+    .logo img {
+        height: 60px;
     }
 
-    .header .nav {
-        margin-top: 1rem;
+    .nav {
+        gap: 1rem;
+        /* Minskad avstånd mellan länkar */
+    }
+
+    .nav a {
+        font-size: 0.9rem;
+        /* Mindre textstorlek */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 50px;
+    }
+
+    .nav {
+        gap: 0.8rem;
+        /* Ännu mindre mellanrum */
+    }
+
+    .nav a {
+        font-size: 0.85rem;
     }
 }
 
 @media (max-width: 480px) {
-    .header .nav a {
-        margin: 0 0.5rem;
-        font-size: 0.9rem;
+    .logo img {
+        height: 40px;
+    }
+
+    .nav {
+        gap: 0.5rem;
+        /* Kompakt layout */
+    }
+
+    .nav a {
+        font-size: 0.8rem;
+        /* Mindre textstorlek */
     }
 }

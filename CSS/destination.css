@@ -1,4 +1,3 @@
-/* Destination-layout */
 .destination-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -6,15 +5,11 @@
     padding: 2rem;
 }
 
-/* Destination Card */
 .destination-card {
-    position: relative;
-    overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-    cursor: pointer;
     background-color: white;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -22,56 +17,77 @@
 .destination-card img {
     width: 100%;
     height: 200px;
-    /* Fast höjd för alla bilder */
     object-fit: cover;
-    /* För att behålla bildens proportioner */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    transition: opacity 0.3s;
 }
 
-.destination-card .info {
-    padding: 1rem;
-    flex-grow: 1;
+.info {
+    padding: 1.5rem;
+}
+
+.info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #f39c12;
+}
+
+.flight-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.flight-option:last-child {
+    border-bottom: none;
+}
+
+.details {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    gap: 0.3rem;
 }
 
-.destination-card h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+.details .airline {
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-.destination-card h2 {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+.details .price {
+    color: #f39c12;
+    font-weight: bold;
 }
 
-.destination-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.details .airport {
+    font-size: 0.9rem;
+    color: #555;
 }
 
-.destination-card ul li {
-    margin: 0.5rem 0;
+.button {
+    background-color: #f39c12;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.2s, transform 0.2s;
+    font-size: 0.9rem;
 }
 
-/* Hover-effekter utan JavaScript */
-.destination-card:hover {
-    transform: scale(1.02);
+.button:hover {
+    background-color: #d87f0a;
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-    .destination-card img {
-        height: 200px;
+    .flight-option {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
-}
 
-@media (max-width: 480px) {
-    .destination-card img {
-        height: 180px;
+    .button {
+        align-self: flex-end;
     }
 }
