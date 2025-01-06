@@ -1,11 +1,10 @@
-/* Reset-stilar */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Grundläggande body-stil */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -15,12 +14,10 @@ body {
     color: #333;
 }
 
-/* Header och Footer */
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Navigationen till höger om logotypen */
     background-color: #f39c12;
     padding: 1rem 2rem;
     color: white;
@@ -32,26 +29,20 @@ footer {
     color: white;
 }
 
-/* Logotypen */
 .logo img {
     height: 75px;
-    /* Standardstorlek */
     transition: height 0.2s;
-    /* Smidig övergång vid responsiv ändring */
 }
 
-/* Navigation */
 .nav {
     display: flex;
     gap: 1.5rem;
-    /* Standard mellanrum mellan länkar */
 }
 
 .nav a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
-    /* Standardstorlek för länkar */
     transition: font-size 0.2s, color 0.2s;
 }
 
@@ -59,7 +50,6 @@ footer {
     color: #ddd;
 }
 
-/* Anpassa headern för mindre skärmar */
 @media (max-width: 1024px) {
     .logo img {
         height: 60px;
@@ -67,12 +57,10 @@ footer {
 
     .nav {
         gap: 1rem;
-        /* Minskad avstånd mellan länkar */
     }
 
     .nav a {
         font-size: 0.9rem;
-        /* Mindre textstorlek */
     }
 }
 
@@ -83,7 +71,6 @@ footer {
 
     .nav {
         gap: 0.8rem;
-        /* Ännu mindre mellanrum */
     }
 
     .nav a {
@@ -98,11 +85,9 @@ footer {
 
     .nav {
         gap: 0.5rem;
-        /* Kompakt layout */
     }
 
     .nav a {
         font-size: 0.8rem;
-        /* Mindre textstorlek */
     }
 }

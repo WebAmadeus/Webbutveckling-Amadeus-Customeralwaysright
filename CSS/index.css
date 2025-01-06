@@ -1,4 +1,3 @@
-/* Grid-layout för startsidan */
 .grid-container {
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -9,7 +8,6 @@
 .hero {
     position: relative;
     height: 70vh;
-    /* Hero-sektionen fyller 70% av skärmens höjd */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,25 +15,20 @@
     text-align: center;
     background-image: url('/img/hero.jpg');
     background-size: cover;
-    /* Bilden fyller hela området */
     background-position: center;
-    /* Centrerad bild */
     background-repeat: no-repeat;
-    /* Undvik upprepning */
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    /* Skugga för bättre kontrast */
 }
 
 .hero p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    /* Skugga för bättre kontrast */
 }
 
 .hero button {
@@ -52,10 +45,8 @@
 .hero button:hover {
     background-color: #d87f0a;
     transform: scale(1.05);
-    /* Lätt zoom-effekt */
 }
 
-/* Features */
 .features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
