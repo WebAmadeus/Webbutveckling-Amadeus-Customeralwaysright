@@ -5,7 +5,7 @@
     justify-content: center;
     padding: 2rem;
 }
-
+ 
 .card {
     flex: 1 1 calc(30% - 2rem);
     background-color: #fff;
